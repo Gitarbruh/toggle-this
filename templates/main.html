@@ -1,13 +1,15 @@
 <!doctype html>
  <head>
- <title> Current Status </title>
+
 </head>
 
  <body>
-  <h1>Device Listing & Status </h1>
- 
-     <p> No 4 is {{ button }}</P>
-
+  <h1>Devices plugged in </h1>
+ {% if action == "on" %}
+     <p> No 4 is {{ action }}</P>
+{% else %}
+<p> It's off</p>
+{% endif %}
 </body>
 
 </html>
